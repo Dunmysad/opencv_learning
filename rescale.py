@@ -3,11 +3,11 @@ from turtle import width
 import cv2 as cv
 from cv2 import resize
 
-img = cv.imread('./photos/wallhaven-rdv22j.jpg')
+img = cv.imread('./photos/1.jpg')
 
 cv.imshow('cat', img)
 
-
+# 缩放算法
 def rescaleFrame(frame, scale=0.75):
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
